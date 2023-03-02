@@ -149,4 +149,35 @@ footer a {
   display: block;
 }
 
+/* Tablet Media Query */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Hide mobile-specific content */
+  .mobile-only {
+    display: none;
+  }
+  
+  /* Show tablet-specific content */
+  .tablet-only {
+    display: block;
+  }
+}
+
+/* Desktop Media Query */
+@media only screen and (min-width: 1025px) {
+  /* Hide mobile-specific content */
+  .mobile-only {
+    display: none;
+  }
+  
+  /* Show desktop-specific content */
+  .desktop-only {
+    display: block;
+  }
+  
+  /* Use dynamic pseudo-class for hover effect */
+  .desktop-only:hover {
+    background-color: #CCC000;
+  }
+}
+
 }
