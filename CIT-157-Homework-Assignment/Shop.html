@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--  
+  Student Name: Heath Sauter 
+  File Name: Offers.html
+  Date: 02/08/2023 
+-->
+
+<html lang="en">
+<head>
+<title>Shop – Details | Your Turn</title>
+<meta charset="utf-8">
+<meta name="description" content="This page provides you with the option to share your personal information.">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+function sendEmail(event) {
+  event.preventDefault();
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let address = document.getElementById('address').value;
+  let phone = document.getElementById('phone').value;
+  let message = document.getElementById('message').value;
+
+  let subject = encodeURIComponent("Customer Contact");
+  let body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nAddress: ${address}\nPhone: ${phone}\nMessage: ${message}`);
+
+  window.location.href = `mailto:hsauter0001@kctcs.edu?subject=${subject}&body=${body}`;
+}
+</script>
+</head>
+
+<body>
+<header class="header-container"> 
+<h1>Shop</h1>
+
+<body>
+  <!-- Hamburger menu icon -->
+  <div class="hamburger-menu">
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+  </div>
+
+</header>
+
+  <!-- Menu container -->
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Offers.html">Offers</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+  </nav>
+   <script src="scripts/script.js"></script>
+
+   <br>
+
+<img src="images/knockout_(1).PNG" alt="computer with the text web design" height="400">
+
+<hr class="colored-break">
+
+<main>
+<dd>We are currently in the process of developing a quality shoping experience.  Please stand by while we update our pages with comedically inconvenient content.</dd>
+
+<br>
+
+<header>
+<h4>If you would like to reach out to us, feel free to leave us your personal information and thoughts in the form below!</h4>
+<header>
+
+<br>
+<center>
+<form class="form" onsubmit="sendEmail(event);">
+  <div>
+    <label for="name" class="textalign">Name:</label>
+  </br>
+    <input type="text" name="name" id="name" class="textboxes">
+  </div>
+
+  <div>
+    <label for="email" class="textalign">Email:</label>
+  </br>
+    <input type="text" name="email" id="email" class="textboxes">
+  </div>
+
+  <div>
+    <label for="address" class="textalign">Address:</label>
+  </br>
+    <input type="text" name="address" id="address" class="textboxes">
+  </div>
+
+  <div>
+    <label for="phone" class="textalign">Phone:</label>
+  </br>
+    <input type="text" name="phone" id="phone" class="textboxes">
+  </div>
+
+  <div>
+    <label for="message" class="textalign">Message:</label>
+  </br>
+    <textarea name="message" id="message" class="textboxes"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Submit" class="textboxes">
+  </div>
+</form>
+</center>
+<h2></h2>
+<br>
+<br>
+<br>
+</main>
+<center>
+<footer class="footerbottom">
+
+  <hr class="colored-break">
+ 
+  <div class="social">
+ <a href="https://www.facebook.com/foamfortfun/" target="_blank">
+      <img src="images/Facebook.png" alt="Facebook logo">
+ <a href="https://www.redbubble.com/people/PoppyMonster/shop?asc=u&ref=account-nav-dropdown" target="_blank">
+      <img src="images/Redbubble.png" alt="Redbubble logo">
+<a href="https://discord.gg/drC3a6A3" target="_blank">
+      <img src="images/Discord.png" alt="Discord logo">
+    
+    </a>
+      </div>
+
+      <aside id="contact">
+  <pp>Contact us
+ <a onclick="location.href='mailto:hsauter0001@kctcs.edu'">here</a> 
+ or check out our other links above.</pp>
+  </aside>
+
+
+</center>
+</footer> 
+</body>
+</html>
